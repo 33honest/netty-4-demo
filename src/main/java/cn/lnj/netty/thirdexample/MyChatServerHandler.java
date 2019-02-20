@@ -9,6 +9,7 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 
 public class MyChatServerHandler extends SimpleChannelInboundHandler<String> {
 
+	// channelGroup 需要设置成静态变量
 	private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
 	@Override
