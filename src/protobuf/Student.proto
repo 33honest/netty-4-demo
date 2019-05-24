@@ -1,9 +1,9 @@
 syntax = "proto2";
 
-package cn.lnj.propobuf;
+package cn.lnj.netty.sixthexample;
 
 option optimize_for = SPEED ;
-option java_package = "cn.lnj.propobuf";
+option java_package = "cn.lnj.netty.sixthexample";
 option java_outer_classname = "DateInfo";
 
 message Student {
