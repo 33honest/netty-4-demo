@@ -3,6 +3,7 @@ package cn.lnj.nio;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Arrays;
@@ -22,6 +23,7 @@ public class NioTest5 {
         buffer[2] = ByteBuffer.allocate(4);
 
         SocketChannel channel = serverSocketChannel.accept();
+
 
         while(true) {
             long byteRead = 0;
