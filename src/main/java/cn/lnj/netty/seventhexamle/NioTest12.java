@@ -43,6 +43,8 @@ public class NioTest12 {
 
         while (true) {
 
+            //阻塞方法
+            //返回selector所关注的事件的数量
             int number = selector.select();
 
             Set<SelectionKey> selectionKeys = selector.selectedKeys();
